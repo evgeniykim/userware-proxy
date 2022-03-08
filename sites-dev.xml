@@ -1,0 +1,19 @@
+<site-list version="1">
+  <created-by>
+    <tool>EMIESiteListManager</tool>
+    <version>10.0.14357.1007</version>
+    <date-created>02/19/2020 15:07:38</date-created>
+  </created-by>  
+  <site url="localcombine.net/session/load/">
+    <compat-mode>Default</compat-mode>
+    <open-in allow-redirect="true">IE11</open-in>
+  </site>
+  <site url="localcombine.net/classic/">
+    <compat-mode>Default</compat-mode>
+    <open-in allow-redirect="true">IE11</open-in>
+  </site>
+  <site url="localcombine.net/Embedded/">
+    <compat-mode>Default</compat-mode>
+    <open-in allow-redirect="true">IE11</open-in>
+  </site>
+</site-list>

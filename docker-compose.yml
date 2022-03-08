@@ -1,0 +1,14 @@
+version: '3.4'
+
+# docker-compose -f .\local-combine-compose.yml up -d
+
+services:
+  nginx-proxy:
+    image: userware-combine-proxy
+    build: .
+    ports:
+      - "80:80"
+
+    volumes:
+      - ../combine.classic/Combine.Municipality.Silverlight/Bin/Debug:/var/www/xap/mun
+      - ../combine.classic/Combine.Performer.Silverlight/Bin/Debug:/var/www/xap/per
