@@ -3,10 +3,7 @@
 
 ## Pre-requisites
 
-* Docker, can be any docker installation - Docker desktop, docker inside WSL2.
-
-Or
-* Local nginx installed, version >= 1.20
+* Docker, can be any docker installation - Docker desktop, docker inside WSL2. Alternatively local **nginx** (version >= 1.20) can be installed on host
 
 
 ## Setup
@@ -37,4 +34,10 @@ After appliying keys from Pulsen-Combine.reg you can check if Edge has got confi
 | *://localcombine.net/embedded     | IE11   | True            |
 | *://localcombine.net/session/load | IE11   | True            |
 
-#
+## Runnig proxy
+
+From the root of folder of this repository run following shell command: 
+```bash
+docker-compose -f "docker-compose.yml" up -d
+```
+**Note.** If you do any changes to Dockerfile or nginx configuration file you may need to run above command with `--build` argument to apply those changes in container.
